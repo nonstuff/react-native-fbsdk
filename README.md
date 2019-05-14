@@ -85,6 +85,7 @@ If you want to use AppEventsLogger to log events, override `onCreate()` method a
 @Override
 public void onCreate() {
   super.onCreate();
+  FacebookSdk.sdkInitialize(getApplicationContext());
   AppEventsLogger.activateApp(this);
   //...
 }
